@@ -62,24 +62,24 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: 'CorpComment',
+    title: 'Ice-Latte Coffee',
     description:
-      'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-    tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
+      'I am currently working as a front-end developer on this startup project for 3 months now. Users can choose coffee they like and add it to their cart.',
+    tags: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'Jest'],
     imageUrl: fil,
   },
   {
-    title: 'rmtDev',
+    title: 'Zdrave Zhyttia',
     description:
-      'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
+      'Full stack project with administration panel for a cow shelter. I was the front-end developer. It has features like booking, search and pagination.',
     tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
     imageUrl: kor,
   },
   {
-    title: 'Word Analytics',
+    title: 'Water tracker',
     description:
-      'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-    tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
+      'A public web app for keeping track of water intake. It show your dauly norma. Easily adjustable for different users after loging in.',
+    tags: ['React', 'Next.js', 'MongoDB', 'Styled-components', 'Redux'],
     imageUrl: wat,
   },
 ] as const;
@@ -94,7 +94,7 @@ export const skillsData = [
   'Node.js',
   'Git',
   'Tailwind',
-  'Prisma',
+  'Styled-components',
   'MongoDB',
   'Redux',
   'GraphQL',
