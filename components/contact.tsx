@@ -1,14 +1,35 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import SectionHeading from './section-heading';
 import { useSectionInView } from '@/lib/hook';
-import { motion } from 'framer-motion';
+import { m, motion } from 'framer-motion';
 import SubmitBtn from './submit-btn';
 import { sendEmail } from '@/actions/sendEmail';
+import toast from 'react-hot-toast';
 
 export default function Contact() {
   const { ref } = useSectionInView('Contact');
+
+  // State for the form fields
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (event: any) => {
+    event.preventDefault();
+    const formData = new FormData();
+    formData.append('senderEmail', email);
+    formData.append('message', message);
+
+    const { data, error } = await sendEmail(formData);
+    if (error) {
+      toast.error(error);
+    } else {
+      toast.success('Email was sent successfully ');
+      setEmail('');
+      setMessage('');
+    }
+  };
 
   return (
     <motion.section
@@ -39,12 +60,12 @@ export default function Contact() {
 
       <form
         className='mt-10 flex flex-col dark:text-black'
-        action={async (formData) => {
-          await sendEmail(formData);
-        }}>
+        onSubmit={handleSubmit}>
         <input
           type='email'
           name='senderEmail'
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           required
           maxLength={500}
           placeholder='Your email'
@@ -54,6 +75,8 @@ export default function Contact() {
           placeholder='Your message'
           name='message'
           required
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
           maxLength={5000}
           className='h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none'
         />
