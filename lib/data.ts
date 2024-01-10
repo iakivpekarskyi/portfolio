@@ -35,38 +35,39 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Graduated bootcamp',
-    location: 'Miami, FL',
+    title: 'Graduated Online Academy',
+    location: 'Kyiv, Ukraine',
     description:
-      'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
+      'I graduated after 12 months of studying as a full-stack developer. The stack includes React, Next.js, TypeScript, Tailwind and MongoDB, Node.js and Express.js.',
     icon: React.createElement(LuGraduationCap),
-    date: '2019',
+    date: '2022 - 2023',
   },
   {
     title: 'Front-End Developer',
-    location: 'Orlando, FL',
+    location: 'Kyiv, Ukraine',
     description:
-      'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
+      'I found work at a company that was bulding web-sites for charity institutions as a front-end developer. I also upskilled to the full stack.',
     icon: React.createElement(CgWorkAlt),
-    date: '2019 - 2021',
+    date: '2023',
   },
   {
     title: 'Full-Stack Developer',
-    location: 'Houston, TX',
+    location: 'London, UK',
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
-    date: '2021 - present',
+    date: '2023 - present',
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: 'Ice-Latte Coffee',
+    title: 'Iced-Latte Coffee',
     description:
       'I am currently working as a front-end developer on this startup project for 3 months now. Users can choose coffee they like and add it to their cart.',
     tags: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'Jest'],
     imageUrl: fil,
+    gitHubUrl: 'https://iced-latte.uk/',
   },
   {
     title: 'Zdrave Zhyttia',
@@ -74,6 +75,7 @@ export const projectsData = [
       'Full stack project with administration panel for a cow shelter. I was the front-end developer. It has features like booking, search and pagination.',
     tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
     imageUrl: kor,
+    gitHubUrl: 'https://zdrave-zyttia.site/',
   },
   {
     title: 'Water tracker',
@@ -81,6 +83,7 @@ export const projectsData = [
       'A public web app for keeping track of water intake. It show your dauly norma. Easily adjustable for different users after loging in.',
     tags: ['React', 'Next.js', 'MongoDB', 'Styled-components', 'Redux'],
     imageUrl: wat,
+    gitHubUrl: 'https://ruslan-ts.github.io/water-tracker-project/',
   },
 ] as const;
 
