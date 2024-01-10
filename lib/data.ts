@@ -35,13 +35,14 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Graduated Online Academy',
-    location: 'Kyiv, Ukraine',
+    title: 'Full-Stack Developer',
+    location: 'London, UK',
     description:
-      'I graduated after 12 months of studying as a full-stack developer. The stack includes React, Next.js, TypeScript, Tailwind and MongoDB, Node.js and Express.js.',
-    icon: React.createElement(LuGraduationCap),
-    date: '2022 - 2023',
+      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind and MongoDB. I'm open to full-time opportunities.",
+    icon: React.createElement(FaReact),
+    date: '2023 - present',
   },
+
   {
     title: 'Front-End Developer',
     location: 'Kyiv, Ukraine',
@@ -51,12 +52,12 @@ export const experiencesData = [
     date: '2023',
   },
   {
-    title: 'Full-Stack Developer',
-    location: 'London, UK',
+    title: 'Graduated Online Academy',
+    location: 'Kyiv, Ukraine',
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: '2023 - present',
+      'I graduated after 12 months of studying as a full-stack developer. The stack includes React, Next.js, TypeScript, Tailwind and MongoDB, Node.js and Express.js.',
+    icon: React.createElement(LuGraduationCap),
+    date: '2022 - 2023',
   },
 ] as const;
 
