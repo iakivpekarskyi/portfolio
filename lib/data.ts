@@ -68,7 +68,7 @@ export const projectsData = [
       'I am currently working as a front-end developer on this startup project for 3 months now. Users can choose coffee they like and add it to their cart.',
     tags: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'Jest'],
     imageUrl: fil,
-    gitHubUrl: 'https://dev.it-sl.ru/',
+    gitHubUrl: 'https://iced-latte.uk/',
   },
   {
     title: 'Zdrave Zhyttia',
