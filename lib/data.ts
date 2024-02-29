@@ -35,16 +35,16 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Full-Stack Developer',
+    title: 'Frontend Developer',
     location: 'London, UK',
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind and MongoDB. I'm open to full-time opportunities.",
+      "I'm now a frontend developer working on an open source project. My stack includes React, Next.js, TypeScript, Tailwind and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
     date: '2023 - present',
   },
 
   {
-    title: 'Front-End Developer',
+    title: 'Frontend Developer',
     location: 'Kyiv, Ukraine',
     description:
       'I found work at a company that was bulding web-sites for charity institutions as a front-end developer. I also upskilled to the full stack.',

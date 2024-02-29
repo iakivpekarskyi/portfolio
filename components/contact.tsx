@@ -16,6 +16,29 @@ export default function Contact() {
     message: '',
   });
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = {
+      senderEmail: form.senderEmail,
+      message: form.message,
+    };
+
+    const { error } = await sendEmail(formData);
+
+    if (error) {
+      toast.error(error);
+      return;
+    }
+
+    setForm({
+      senderEmail: '',
+      message: '',
+    });
+
+    toast.success('Email sent successfully!');
+  };
+
   return (
     <motion.section
       id='contact'
@@ -45,19 +68,7 @@ export default function Contact() {
 
       <form
         className='mt-10 flex flex-col dark:text-black'
-        action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
-
-          if (error) {
-            toast.error(error);
-            return;
-          }
-          setForm({
-            senderEmail: '',
-            message: '',
-          });
-          toast.success('Email sent successfully!');
-        }}>
+        onSubmit={handleSubmit}>
         <input
           className='h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none'
           name='senderEmail'

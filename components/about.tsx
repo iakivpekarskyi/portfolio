@@ -21,7 +21,7 @@ export default function About() {
         After graduating with a degree in{' '}
         <span className='font-medium'>Law</span>, I transitioned to pursue my
         passion for programming. I enrolled in a coding bootcamp and mastered{' '}
-        <span className='font-medium'>full-stack web development</span>.{' '}
+        <span className='font-medium'>frontend web development</span>.{' '}
         <span className='italic'>Problem-solving</span> is my favorite part of
         programming, and I cherish the satisfaction of finding solutions. My
         core stack includes{' '}
@@ -32,7 +32,7 @@ export default function About() {
         <span className='font-medium'> TypeScript and Tailwind</span>. Eager to
         explore new technologies, I`m currently seeking a{' '}
         <span className='font-medium'>
-          full-time software developer position
+          full-time frontend developer position
         </span>
         .
       </p>
