@@ -16,13 +16,12 @@ export default function Contact() {
     message: '',
   });
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const formData = {
-      senderEmail: form.senderEmail,
-      message: form.message,
-    };
+    const formData = new FormData();
+    formData.append('senderEmail', form.senderEmail);
+    formData.append('message', form.message);
 
     const { error } = await sendEmail(formData);
 
