@@ -76,7 +76,7 @@ export const projectsData = [
       'Full stack project with administration panel for a cow shelter. I was the front-end developer. It has features like booking, search and pagination.',
     tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
     imageUrl: kor,
-    gitHubUrl: 'https://zdrave-zyttia.site/',
+    gitHubUrl: 'https://cows-shelter-frontend.vercel.app/',
   },
   {
     title: 'Water tracker',
